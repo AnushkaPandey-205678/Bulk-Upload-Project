@@ -1,0 +1,25 @@
+
+<div class="container">
+  <div class="row">
+    <label for="file">Select File</label>
+    <Select name="myfile" id="file">
+      <option value="Product">Product</option>
+      <option value="Salesorder">Salesorder</option>
+      <option value="Asset"  >Asset</option>
+      <option value="Booking">Booking</option>
+      <option value="IRF">IRF</option>
+      <option value="Survey">Survey</option>
+      <option value="Installation">Installation</option>
+      <option value="Commissioning">Commissioning</option>
+    </Select>
+  </div>
+  <br>
+  <div class="row">
+    <input (change)="onFileChange($event)" class="form-control" type="file" multiple="false" accept=".xlsx, .xls"><br />
+  </div>
+  <div class="row">
+    <button class="btn" (click)="uploadFile()" mat-raised-button color="blue">upload file</button>
+  </div>
+
+</div>
+
